@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"pwm_ledrgb\startup_stm32f407xx.o"
+"pwm_ledrgb\main.o"
+"pwm_ledrgb\stm32f4xx_it.o"
+"pwm_ledrgb\stm32f4xx_hal_msp.o"
+"pwm_ledrgb\stm32f4xx_hal_tim.o"
+"pwm_ledrgb\stm32f4xx_hal_tim_ex.o"
+"pwm_ledrgb\stm32f4xx_hal_rcc.o"
+"pwm_ledrgb\stm32f4xx_hal_rcc_ex.o"
+"pwm_ledrgb\stm32f4xx_hal_flash.o"
+"pwm_ledrgb\stm32f4xx_hal_flash_ex.o"
+"pwm_ledrgb\stm32f4xx_hal_flash_ramfunc.o"
+"pwm_ledrgb\stm32f4xx_hal_gpio.o"
+"pwm_ledrgb\stm32f4xx_hal_dma_ex.o"
+"pwm_ledrgb\stm32f4xx_hal_dma.o"
+"pwm_ledrgb\stm32f4xx_hal_pwr.o"
+"pwm_ledrgb\stm32f4xx_hal_pwr_ex.o"
+"pwm_ledrgb\stm32f4xx_hal_cortex.o"
+"pwm_ledrgb\stm32f4xx_hal.o"
+"pwm_ledrgb\stm32f4xx_hal_exti.o"
+"pwm_ledrgb\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "PWM_LedRGB\PWM_LedRGB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_LedRGB.map" -o PWM_LedRGB\PWM_LedRGB.axf

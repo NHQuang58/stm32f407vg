@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"rtc_lcd\startup_stm32f407xx.o"
+"rtc_lcd\main.o"
+"rtc_lcd\stm32f4xx_it.o"
+"rtc_lcd\stm32f4xx_hal_msp.o"
+"rtc_lcd\lcd_txt.o"
+"rtc_lcd\stm32f4xx_hal_rtc.o"
+"rtc_lcd\stm32f4xx_hal_rtc_ex.o"
+"rtc_lcd\stm32f4xx_hal_rcc.o"
+"rtc_lcd\stm32f4xx_hal_rcc_ex.o"
+"rtc_lcd\stm32f4xx_hal_flash.o"
+"rtc_lcd\stm32f4xx_hal_flash_ex.o"
+"rtc_lcd\stm32f4xx_hal_flash_ramfunc.o"
+"rtc_lcd\stm32f4xx_hal_gpio.o"
+"rtc_lcd\stm32f4xx_hal_dma_ex.o"
+"rtc_lcd\stm32f4xx_hal_dma.o"
+"rtc_lcd\stm32f4xx_hal_pwr.o"
+"rtc_lcd\stm32f4xx_hal_pwr_ex.o"
+"rtc_lcd\stm32f4xx_hal_cortex.o"
+"rtc_lcd\stm32f4xx_hal.o"
+"rtc_lcd\stm32f4xx_hal_exti.o"
+"rtc_lcd\stm32f4xx_hal_tim.o"
+"rtc_lcd\stm32f4xx_hal_tim_ex.o"
+"rtc_lcd\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "RTC_LCD\RTC_LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC_LCD.map" -o RTC_LCD\RTC_LCD.axf

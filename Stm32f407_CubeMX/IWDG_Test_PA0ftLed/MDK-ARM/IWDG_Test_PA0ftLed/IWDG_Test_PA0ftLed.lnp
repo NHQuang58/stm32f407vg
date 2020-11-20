@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"iwdg_test_pa0ftled\startup_stm32f407xx.o"
+"iwdg_test_pa0ftled\main.o"
+"iwdg_test_pa0ftled\stm32f4xx_it.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_msp.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_iwdg.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_rcc.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_rcc_ex.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_flash.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_flash_ex.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_flash_ramfunc.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_gpio.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_dma_ex.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_dma.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_pwr.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_pwr_ex.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_cortex.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_exti.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_tim.o"
+"iwdg_test_pa0ftled\stm32f4xx_hal_tim_ex.o"
+"iwdg_test_pa0ftled\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "IWDG_Test_PA0ftLed\IWDG_Test_PA0ftLed.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IWDG_Test_PA0ftLed.map" -o IWDG_Test_PA0ftLed\IWDG_Test_PA0ftLed.axf
