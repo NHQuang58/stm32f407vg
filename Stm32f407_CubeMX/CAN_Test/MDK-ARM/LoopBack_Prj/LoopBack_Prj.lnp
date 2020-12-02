@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"loopback_prj\stm32f4xx_hal_gpio.o"
+"loopback_prj\stm32f4xx_hal_pwr.o"
+"loopback_prj\stm32f4xx_hal_flash_ex.o"
+"loopback_prj\stm32f4xx_hal_can.o"
+"loopback_prj\stm32f4xx_hal_rcc.o"
+"loopback_prj\stm32f4xx_hal_flash_ramfunc.o"
+"loopback_prj\stm32f4xx_hal_rcc_ex.o"
+"loopback_prj\stm32f4xx_hal_dma.o"
+"loopback_prj\stm32f4xx_hal_tim.o"
+"loopback_prj\stm32f4xx_hal_pwr_ex.o"
+"loopback_prj\stm32f4xx_hal_dma_ex.o"
+"loopback_prj\stm32f4xx_hal_cortex.o"
+"loopback_prj\stm32f4xx_hal.o"
+"loopback_prj\stm32f4xx_hal_tim_ex.o"
+"loopback_prj\stm32f4xx_hal_flash.o"
+"loopback_prj\startup_stm32f407xx.o"
+"loopback_prj\main.o"
+"loopback_prj\stm32f4xx_hal_msp.o"
+"loopback_prj\stm32f4xx_it.o"
+"loopback_prj\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "LoopBack_Prj\LoopBack_Prj.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LoopBack_Prj.map" -o LoopBack_Prj\LoopBack_Prj.axf
