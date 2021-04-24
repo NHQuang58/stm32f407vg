@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"delay_us_ms\system_stm32f4xx.o"
+"delay_us_ms\stm32f4xx_hal_rcc_ex.o"
+"delay_us_ms\stm32f4xx_hal_rcc.o"
+"delay_us_ms\stm32f4xx_hal_pwr.o"
+"delay_us_ms\stm32f4xx_hal_tim_ex.o"
+"delay_us_ms\stm32f4xx_hal_pwr_ex.o"
+"delay_us_ms\stm32f4xx_hal_gpio.o"
+"delay_us_ms\stm32f4xx_hal_flash_ex.o"
+"delay_us_ms\stm32f4xx_hal_flash_ramfunc.o"
+"delay_us_ms\stm32f4xx_hal.o"
+"delay_us_ms\stm32f4xx_hal_dma_ex.o"
+"delay_us_ms\stm32f4xx_hal_cortex.o"
+"delay_us_ms\stm32f4xx_hal_tim.o"
+"delay_us_ms\stm32f4xx_hal_flash.o"
+"delay_us_ms\stm32f4xx_hal_dma.o"
+"delay_us_ms\startup_stm32f407xx.o"
+"delay_us_ms\stm32f4xx_it.o"
+"delay_us_ms\main.o"
+"delay_us_ms\stm32f4xx_hal_msp.o"
+--library_type=microlib --strict --scatter "Delay_US_MS\Delay_US_MS.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Delay_US_MS.map" -o Delay_US_MS\Delay_US_MS.axf

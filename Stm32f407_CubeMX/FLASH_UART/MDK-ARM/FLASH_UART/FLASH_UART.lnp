@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"flash_uart\main.o"
+"flash_uart\stm32f4xx_it.o"
+"flash_uart\stm32f4xx_hal_msp.o"
+"flash_uart\my_flash.o"
+"flash_uart\startup_stm32f407xx.o"
+"flash_uart\stm32f4xx_hal_flash.o"
+"flash_uart\stm32f4xx_hal_flash_ramfunc.o"
+"flash_uart\stm32f4xx_hal_uart.o"
+"flash_uart\stm32f4xx_hal.o"
+"flash_uart\stm32f4xx_hal_gpio.o"
+"flash_uart\stm32f4xx_hal_dma_ex.o"
+"flash_uart\stm32f4xx_hal_cortex.o"
+"flash_uart\stm32f4xx_hal_dma.o"
+"flash_uart\stm32f4xx_hal_rcc.o"
+"flash_uart\stm32f4xx_hal_pwr_ex.o"
+"flash_uart\stm32f4xx_hal_rcc_ex.o"
+"flash_uart\stm32f4xx_hal_pwr.o"
+"flash_uart\stm32f4xx_hal_tim.o"
+"flash_uart\stm32f4xx_hal_flash_ex.o"
+"flash_uart\stm32f4xx_hal_tim_ex.o"
+"flash_uart\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "FLASH_UART\FLASH_UART.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FLASH_UART.map" -o FLASH_UART\FLASH_UART.axf
